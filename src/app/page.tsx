@@ -11,8 +11,8 @@ export default function Home() {
           name="textInput"
           id="textInput"
           placeholder="Enter text"
-          className="textarea-gradient-border w-full max-w-lg p-1 rounded-2xl bg-gray-800 text-white focus:outline-none"
-        ></textarea>
+          className="textarea-gradient-border w-full max-w-lg rounded-2xl focus:outline-none"
+        ></textarea> 
       </div>
     </main>
   );
