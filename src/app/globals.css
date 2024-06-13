@@ -32,7 +32,7 @@ body {
   }
 }
 
-/* globals.css or a similar global stylesheet */
+/* globals.css */
 .textarea-gradient-border {
   border: 3px solid transparent;
   background-image: linear-gradient(rgb(var(--background-end-rgb)), rgb(var(--background-end-rgb))), linear-gradient(to right, #4facfe, #00f2fe);
@@ -45,4 +45,10 @@ body {
   border-color: transparent;
   background-image: linear-gradient(rgb(var(--background-end-rgb)), rgb(var(--background-end-rgb))), linear-gradient(to right, #4facfe, #00f2fe);
   box-shadow: 0 0 10px rgba(79, 172, 254, 0.5), 0 0 10px rgba(0, 242, 254, 0.5);
+}
+
+.textarea-gradient-border {
+  resize: none; /* Disable manual resizing */
+  overflow-y: auto; /* Enable vertical scrollbar when needed */
+  transition: height 0.2s ease; /* Smooth transition for height change */
 }
