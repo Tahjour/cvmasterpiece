@@ -46,7 +46,7 @@ export default function Home() {
     <main className="flex flex-col min-h-screen justify-start items-center p-5">
       <h1 className="text-4xl mb-3">CVMasterpiece</h1>
       <h4 className="mb-6">Create your perfect CV/Resume</h4>
-      <div className="w-full grid grid-cols-2 gap-4">
+      <div className="w-full grid grid-cols-2 gap-4 auto-rows-min">
         <textarea
           ref={textAreaJobDescription}
           name="job-description-textarea"

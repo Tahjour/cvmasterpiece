@@ -40,7 +40,7 @@ body {
   background-origin: border-box;
   background-clip: padding-box, border-box;
   padding: 10px;
-  height: auto; /* Allow the textarea to grow in height */
+  height: min-content; /* Allow the textarea to grow in height */
   resize: none; /* Disable manual resizing */
 }
 
