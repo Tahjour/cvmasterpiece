@@ -10,6 +10,7 @@ export default function Home() {
     const handleInput = (textArea: HTMLTextAreaElement) => {
       textArea.style.height = "auto";
       const scrollHeight = textArea.scrollHeight;
+      textArea.style.height = scrollHeight + "px";
       textArea.style.height = `${Math.min(scrollHeight, 300)}px`;
     };
 
@@ -42,11 +43,12 @@ export default function Home() {
       cleanupFunctions.forEach((cleanup) => cleanup());
     };
   }, []);
+  
   return (
     <main className="flex flex-col min-h-screen justify-start items-center p-5">
       <h1 className="text-4xl mb-3">CVMasterpiece</h1>
       <h4 className="mb-6">Create your perfect CV/Resume</h4>
-      <div className="w-full grid grid-cols-2 gap-4 auto-rows-min">
+      <div className="w-full grid grid-cols-2 gap-4 auto-cols-min">
         <textarea
           ref={textAreaJobDescription}
           name="job-description-textarea"
