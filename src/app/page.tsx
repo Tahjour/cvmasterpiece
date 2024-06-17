@@ -53,14 +53,14 @@ export default function Home() {
           ref={textAreaJobDescription}
           name="job-description-textarea"
           id="job-description-textarea"
-          placeholder="Paste job description"
+          placeholder="Job description"
           className="textarea-gradient-border w-full max-w-5xl rounded-2xl focus:outline-none"
         ></textarea>
         <textarea
           ref={textAreaResumeContent}
           name="resume-content-textarea"
           id="resume-content-textarea"
-          placeholder="Paste resume content"
+          placeholder="Resume content"
           className="textarea-gradient-border w-full max-w-5xl rounded-2xl focus:outline-none"
         ></textarea>
       </div>
